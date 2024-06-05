@@ -1,0 +1,308 @@
+:root {
+  --background-color: white;
+  --footer-background-color: #0f0f48;
+}
+
+* {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--background-color);
+  position: relative;
+  width: 1455px;
+}
+
+.navbar a {
+  background-color: transparent;
+}
+
+.logo {
+  background-color: var(--background-color);
+  margin-left: 80px;
+}
+
+.searchform {
+  display: inline-block;
+  position: relative;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: transparent;
+  margin: 15px 0 0 70px;
+}
+
+input {
+  width: 600px !important;
+  height: 40px !important;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+input,
+.searchlogo {
+  border: 0;
+  outline: 0;
+}
+
+.login span,
+.cart span,
+.seller span,
+.more span {
+  background-color: var(--background-color);
+  color: black;
+}
+
+.login,
+.cart,
+.seller,
+.more {
+  margin: 20px 0 0 70px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--background-color);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+.login a,
+.login a:hover,
+.login a:visited,
+.cart a,
+.cart a:hover,
+.cart a:visited,
+.seller a,
+.seller a:hover,
+.seller a:visited,
+.more a,
+.more a:hover,
+.more a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown,
+.more-dropdown {
+  display: none;
+}
+
+.login:hover .dropdown,
+.more:hover .more-dropdown {
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+  display: block;
+  margin-top: 20px;
+}
+
+.login:hover .dropdown a,
+.more:hover .more-dropdown a {
+  margin-left: -40px;
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  position: relative;
+  display: flow;
+  z-index: 1;
+}
+
+.more:hover .more-dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  min-width: 1000px;
+  min-height: 300px;
+  display: flex;
+}
+
+.footer p,
+.footer ul,
+.footer span {
+  background-color: var(--footer-background-color);
+}
+
+.footer p {
+  color: grey;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-bottom: -20px;
+}
+
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.vl {
+  border-left: 2px solid grey;
+  margin: 50px 0px 0px 40px;
+  height: 210px;
+}
+
+.about,
+.companies,
+.help,
+.policy {
+  background-color: var(--footer-background-color);
+  padding-left: 50px;
+}
+
+.mail,
+.address {
+  background-color: var(--footer-background-color);
+  padding-left: 80px;
+  width: 160px;
+}
+
+.footer span {
+  color: white;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 13px;
+  font-size: 12px;
+}
+
+.footer .mail .mailus,
+.footer .address .officeadd {
+  margin-left: -40px;
+  margin-bottom: 2px !important;
+}
+
+.footer .mail .social {
+  margin-top: -22px !important;
+  margin-left: -40px;
+}
+
+.footer .address img {
+  margin-top: 90px !important;
+  margin-left: -170px !important;
+  width: 300px;
+  height: 25px;
+}
+
+.category {
+  background-color: var(--background-color);
+  padding-left: 50px;
+  margin: 20px 0px 20px 10px;
+}
+
+.category img {
+  width: 100px;
+  height: 100px;
+}
+
+.category a,
+.bestelectronics .listitems a {
+  background-color: var(--background-color);
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-left: 60px;
+}
+
+.category span,
+.bestelectronics .listitems a span {
+  background-color: var(--background-color);
+  display: flex;
+  position: relative;
+}
+
+.bestelectronics {
+  background-color: var(--background-color);
+  display: inline-block;
+  width: 1150px;
+  height: 400px;
+  padding-left: 50px;
+  margin: 5px 0px 10px 10px;
+}
+
+.bestelectronics h2,
+.bestelectronics .listitems a img {
+  background-color: var(--background-color);
+}
+
+.bestelectronics .listitems a img {
+  height: 120px;
+}
+
+.bestelectronics .listitems a {
+  border: 1px solid black;
+}
+
+.bestelectronics .listitems a span {
+  margin-left: -40px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.bestelectronics button {
+  background-color: blue;
+  border-radius: 25px;
+  border: 0px solid black;
+  color: white;
+  height: 35px;
+  width: 30px;
+  margin-left: 800px;
+}
+
+.info {
+  width: 100%;
+  padding: 40px 10px 20px 20px;
+}
+
+.info,
+.info span,
+.info p, .bestelectronics a {
+  background-color: var(--background-color);
+}
+
+.info span {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.info p {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: grey;
+}
+
+.info p a {
+  background-color: var(--background-color);
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.price-range {
+  display: inline-block;
+}
+
+.flight img {
+  display: block;
+  width: 280px;
+  height: 390px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.electronic {
+  display: flex;
+}

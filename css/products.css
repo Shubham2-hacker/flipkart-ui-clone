@@ -1,0 +1,437 @@
+:root {
+  --background-color: white;
+  --nav-background-color: #485bed;
+  --footer-background-color: #0f0f48;
+}
+
+* {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--nav-background-color);
+  margin-top: -8px;
+  position: static;
+  min-width: 1000px;
+}
+
+.navbar a {
+  background-color: transparent;
+}
+
+.cartlogo {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .logo,
+.logo img {
+  background-color: var(--nav-background-color);
+  margin-left: 80px;
+}
+
+.searchform {
+  display: inline-block;
+  margin-top: 5px;
+  position: relative;
+  background-color: var(--nav-background-color);
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: transparent;
+  margin: 15px 0 0 70px;
+}
+
+.searchform .search input {
+  width: 600px !important;
+  height: 40px !important;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.searchform .search input,
+.searchlogo {
+  border: 0;
+  outline: 0;
+}
+
+.cart span,
+.seller span,
+.more span {
+  background-color: var(--nav-background-color);
+  color: whitesmoke;
+}
+
+.login button {
+  background-color: white;
+  color: #485bed;
+  font-size: 20px;
+  border: 0px solid white;
+  width: 100px;
+  height: 30px;
+}
+
+.login,
+.cart,
+.seller,
+.more {
+  margin: 30px 0 0 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--nav-background-color);
+  position: static;
+  display: inline-block;
+}
+
+.login:hover .seller {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .more {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .cart {
+  right: 80px;
+  position: fixed;
+  display: block;
+}
+
+.login a,
+.login a:hover,
+.login a:visited,
+.cart a,
+.cart a:hover,
+.cart a:visited,
+.seller a,
+.seller a:hover,
+.seller a:visited,
+.more a,
+.more a:hover,
+.more a:visited,
+.items a h3,
+.items a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown,
+.more-dropdown {
+  display: none;
+}
+
+.login:hover .dropdown,
+.more:hover .more-dropdown {
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+  display: block;
+}
+
+.login:hover .dropdown a,
+.more:hover .more-dropdown a {
+  margin-top: -5px;
+  margin-left: -40px;
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.more:hover .more-dropdown {
+  width: 260px;
+  margin-left: -150px;
+  display: block;
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  min-width: 1000px;
+  min-height: 300px;
+  display: flex;
+}
+
+.footer p,
+.footer ul,
+.footer span {
+  background-color: var(--footer-background-color);
+}
+
+.footer p {
+  color: grey;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-bottom: -20px;
+}
+
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.vl {
+  border-left: 2px solid grey;
+  margin: 50px 0px 0px 40px;
+  height: 210px;
+}
+
+.about,
+.companies,
+.help,
+.policy {
+  background-color: var(--footer-background-color);
+  padding-left: 50px;
+}
+
+.mail,
+.address {
+  background-color: var(--footer-background-color);
+  padding-left: 80px;
+  width: 160px;
+}
+
+.footer span {
+  color: white;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 13px;
+  font-size: 12px;
+}
+
+.footer .mail .mailus,
+.footer .address .officeadd {
+  margin-left: -40px;
+  margin-bottom: 2px !important;
+}
+
+.footer .mail .social {
+  margin-top: -22px !important;
+  margin-left: -40px;
+}
+
+.footer .address img {
+  margin-top: 90px !important;
+  margin-left: -110px !important;
+  width: 300px;
+  height: 25px;
+}
+
+.filter {
+  width: 20%;
+  min-height: 300px;
+  margin: 10px 0px 20px 5px;
+  padding: 10px 0px 20px 20px;
+}
+
+.filter,
+.filter h2,
+.filter h4,
+.filter .rangeprice,
+.filter select option,
+.filter details,
+.fassured,
+.fassured span,
+.filter details summary,
+.product,
+.urls,
+.urls span,
+.urls a,
+.samsungbuds,
+.all,
+.samsungbuds a,
+.all a,
+.quantity h3,
+.quantity span,
+.product div,
+.all span,
+.items a h5,
+.items a span,
+.items a p,
+.items .price span,
+.items .price h3 {
+  background-color: var(--background-color);
+}
+
+.filter .wsd > :not(.wsd-1) {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+#price-range {
+  width: 94%;
+}
+
+.rangeprice {
+  display: block;
+}
+
+.rangeprice span {
+  padding: 0px 20px;
+}
+
+.rangeprice select {
+  width: 110px;
+}
+
+.fassured {
+  display: flex;
+}
+
+.fassured img {
+  width: 120px;
+}
+
+.fassured #questionmark {
+  border-radius: 50%;
+  background-color: #fff;
+  color: #878787;
+  font-weight: 500;
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 130px;
+
+  /* display: inline-block; */
+  /* margin: 0 2px 0 140px; */
+}
+
+#data #qs {
+  display: none;
+}
+
+.filter summary {
+  padding-top: 18px;
+}
+
+input[type="range"] {
+  transform-origin: left center;
+  background-color: #485bed;
+}
+
+.product {
+  margin-left: 10px;
+  display: block;
+  width: 75%;
+}
+
+#data {
+  width: 100%;
+  display: flex;
+}
+
+.product {
+  width: 80%;
+  margin: 10px 0px 20px 15px;
+}
+
+.urls,
+.urls a,
+.samsungbuds,
+.all,
+.quantity span {
+  color: darkgrey;
+  font-size: 13px;
+}
+
+.urls {
+  margin: 10px 0px 10px 20px;
+}
+
+.samsungbuds {
+  padding: 10px 0px 10px 20px;
+}
+
+.all {
+  margin: 20px 0px 10px 20px;
+}
+
+.quantity {
+  margin: 10px 0px 10px 20px;
+}
+
+.samsungbuds a,
+.all a {
+  text-decoration: none;
+  color: #485bed;
+}
+
+.items {
+  max-width: 260px;
+  max-height: 500px;
+  padding-left: 20px;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.items a #itemimg {
+  width: 150px;
+  height: 170px;
+  margin-left: 40px;
+}
+
+.items div #fassured {
+  width: 80px;
+  margin-left: 30px;
+}
+
+.items div .ratings {
+  background-color: green;
+  color: whitesmoke;
+  padding: 2px;
+}
+
+.items div .total {
+  padding-left: 10px;
+}
+
+.items .price {
+  display: flex;
+}
+
+.items .price span {
+  padding: 20px 10px;
+}
+
+.items .price .peroff,
+.items .bankoffer {
+  color: green;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.items .bankoffer {
+  margin-top: 1px;
+}
+
+.items .price span {
+  text-decoration-line: line-through;
+}
+
+.items:hover {
+  padding-top: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 10px 5px 50px grey;
+}

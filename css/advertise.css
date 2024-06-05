@@ -1,0 +1,46 @@
+* {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+.main .banner {
+  width: 60%;
+}
+
+.main .banner img {
+  background-color: aliceblue;
+  height: 680px;
+}
+
+.main .form img {
+  width: 150px;
+  margin-top: 100px;
+}
+
+.form {
+  margin-left: 110px;
+}
+
+.form input {
+  border: 1px solid grey;
+  width: 280px;
+  height: 30px;
+}
+
+.form button {
+  background-color: rgb(55, 55, 231);
+  border-radius: 10px;
+  width: 280px;
+  height: 35px;
+  color: whitesmoke;
+  margin-top: 20px;
+  border: none;
+}
+
+.form .forgotpass {
+  margin-left: 150px;
+}

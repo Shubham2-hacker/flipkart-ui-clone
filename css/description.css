@@ -1,0 +1,781 @@
+:root {
+  --background-color: white;
+  --nav-background-color: #485bed;
+  --footer-background-color: #0f0f48;
+}
+
+* {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--nav-background-color);
+  margin-top: -8px;
+  position: static;
+  min-width: 1000px;
+}
+
+.navbar a {
+  background-color: transparent;
+}
+
+.cartlogo {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .logo,
+.logo img {
+  background-color: var(--nav-background-color);
+  margin-left: 80px;
+}
+
+.searchform {
+  display: inline-block;
+  margin-top: 5px;
+  position: relative;
+  background-color: var(--nav-background-color);
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: transparent;
+  margin: 15px 0 0 70px;
+}
+
+.searchform .search input {
+  width: 600px !important;
+  height: 40px !important;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.searchform .search input,
+.searchlogo {
+  border: 0;
+  outline: 0;
+}
+
+.cart span,
+.seller span,
+.more span {
+  background-color: var(--nav-background-color);
+  color: whitesmoke;
+}
+
+.login button {
+  background-color: var(--background-color);
+  color: #485bed;
+  font-size: 20px;
+  border: 0px solid white;
+  width: 100px;
+  height: 30px;
+}
+
+.login,
+.cart,
+.seller,
+.more {
+  margin: 30px 0 0 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--nav-background-color);
+  position: static;
+  display: inline-block;
+}
+
+.login:hover .seller {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .more {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .cart {
+  right: 80px;
+  position: fixed;
+  display: block;
+}
+
+.login a,
+.login a:hover,
+.login a:visited,
+.cart a,
+.cart a:hover,
+.cart a:visited,
+.seller a,
+.seller a:hover,
+.seller a:visited,
+.more a,
+.more a:hover,
+.more a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown,
+.more-dropdown {
+  display: none;
+}
+
+.login:hover .dropdown,
+.more:hover .more-dropdown {
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+  display: block;
+}
+
+.login:hover .dropdown a,
+.more:hover .more-dropdown a {
+  margin-top: -5px;
+  margin-left: -40px;
+  color: black;
+  background-color: var(--background-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.more:hover .more-dropdown {
+  width: 260px;
+  margin-left: -150px;
+  display: block;
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  min-width: 1000px;
+  min-height: 300px;
+  display: flex;
+}
+
+.footer p,
+.footer ul,
+.footer span {
+  background-color: var(--footer-background-color);
+}
+
+.footer p {
+  color: grey;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-bottom: -20px;
+}
+
+.footer ul a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.vl {
+  border-left: 2px solid grey;
+  margin: 50px 0px 0px 40px;
+  height: 210px;
+}
+
+.about,
+.companies,
+.help,
+.policy {
+  background-color: var(--footer-background-color);
+  padding-left: 50px;
+}
+
+.mail,
+.address {
+  background-color: var(--footer-background-color);
+  padding-left: 80px;
+  width: 160px;
+}
+
+.footer span {
+  color: white;
+  background-color: var(--footer-background-color);
+  display: block;
+  padding-top: 13px;
+  font-size: 12px;
+}
+
+.footer .mail .mailus,
+.footer .address .officeadd {
+  margin-left: -40px;
+  margin-bottom: 2px !important;
+}
+
+.footer .mail .social {
+  margin-top: -22px !important;
+  margin-left: -40px;
+}
+
+.footer .address img {
+  margin-top: 90px !important;
+  margin-left: -150px !important;
+  width: 300px;
+  height: 25px;
+}
+
+.mainsection {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.mainsection img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.info {
+  padding: 40px 10px 20px 20px;
+}
+
+.info,
+.info span,
+.info p {
+  background-color: var(--background-color);
+}
+
+.info span {
+  width: 100%;
+  margin-top: 20px;
+  color: darkgray;
+}
+
+.info p {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.info p b,
+.install-content .tomorrow {
+  background-color: var(--background-color);
+  color: black;
+}
+
+.price-range {
+  display: inline-block;
+}
+
+.desc {
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.desc p {
+  font-size: 15px;
+}
+
+.imggallery {
+  position: sticky;
+  width: 43%;
+  margin-bottom: 10px;
+}
+
+.imggallery div ul {
+  display: block;
+  width: 600px;
+  height: 250px;
+  margin-left: 40px;
+}
+
+.imggallery img,
+.imggallery iframe {
+  width: 80px;
+  height: 64px;
+  display: flex;
+  border: 1px solid grey;
+  padding: 10px 10px;
+}
+
+.imggallery ul li {
+  list-style-type: none;
+}
+
+.info a {
+  padding: 0px 10px;
+}
+
+.imggallery .subimggallery {
+  display: flex;
+}
+
+.imggallery .subimggallery .displayimg {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.imggallery .subimggallery .allimgs {
+  width: 200px;
+  max-height: 300px;
+}
+
+.imggallery .subimggallery .displayimg img {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  border: none;
+}
+
+.alldetails {
+  min-height: 400px;
+  width: 57%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.alldetails p {
+  color: black;
+  font-size: 18px;
+  margin: 20px 5px 5px 25px;
+}
+
+.allrating .rating {
+  background-color: green;
+  margin-left: 25px;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--background-color);
+}
+
+.allrating img {
+  width: 80px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.specialprice span,
+.price .perdiscount {
+  color: green;
+}
+
+.price .currentprice {
+  font-size: 25px;
+}
+
+.coupondetails img,
+.offerdetails img {
+  height: 22px;
+}
+
+.offerdetails span {
+  font-size: 14px;
+}
+
+.coupon span,
+.offers span {
+  margin-top: 10px;
+}
+
+.price .perdiscount {
+  padding-left: 15px;
+}
+
+.warrenty {
+  display: flex;
+}
+
+.warrenty span {
+  margin: 10px 10px;
+}
+
+.warrenty .logo {
+  width: 76px;
+  height: 32px;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.warrenty img {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 4px;
+}
+
+.delivery,
+.color,
+.highlight,
+.inform,
+.service,
+.sellerdetails .data {
+  display: flex;
+}
+
+.alldetails .delivery span,
+.alldetails .color span,
+.inform .highlight span,
+.inform .service span,
+.info p .service span,
+.alldetails .desc p,
+.alldetails .sellerdetails span,
+#seller .time .since,
+.specs table tbody tr td:first-child {
+  color: grey;
+}
+
+.delivery div input {
+  border-bottom: 1px solid #485bed;
+  border: none;
+  outline: none;
+}
+
+.delivery div p {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.delivery div p b,
+.install-content b {
+  color: green;
+}
+
+#install {
+  margin-left: 132px !important;
+  margin-top: 10px !important;
+}
+
+.color img {
+  width: 50px;
+  border: 1px solid grey;
+  padding: 2px;
+}
+
+.color div {
+  margin-left: 80px;
+}
+
+.color div img {
+  margin-left: 10px;
+}
+
+.inform .highlight span {
+  margin-top: 22px !important;
+}
+
+.inform .service span {
+  margin-left: 10px !important;
+}
+
+.inform .service div {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.inform .service .details span {
+  color: black;
+  font-size: 14px;
+}
+
+.inform .service .details img {
+  width: 20px;
+  height: 20px;
+}
+
+.inform .highlight ul {
+  margin-left: 35px;
+}
+
+.inform .highlight ul li {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.delivery div input,
+.delivery div p {
+  margin-left: 50px;
+}
+
+.safe {
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.safe span {
+  padding-top: -20px;
+}
+
+.supercoin a img {
+  width: 350px;
+  height: 250px;
+}
+
+#supercoin div p {
+  font-size: 12px;
+}
+
+.sellerdetails #sellerlink {
+  margin-left: 90px !important;
+  text-decoration: none;
+  color: #485bed;
+}
+
+.sellerdetails .data .rating {
+  padding: 3px;
+  margin-left: 30px;
+  background-color: #485bed;
+  color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.sellerdetails .policy ul li {
+  margin-left: 50px !important;
+}
+
+.modal-content .earn,
+.modal-content div .how b,
+.modal-content div .shop100 b,
+.modal-content div p {
+  margin-top: 15px;
+}
+
+#supercoin,
+#installation,
+#seller {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: (0, 0, 0, 0.6);
+}
+
+.modal-content,
+.install-content,
+.seller-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close,
+.close1,
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close1:hover,
+.close1:focus,
+.info a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.install-content .before {
+  margin-bottom: 20px;
+  margin-left: 27px;
+}
+
+.sellerdetails .policy a {
+  margin-left: 70px;
+}
+
+#seller .seller-content .aboutseller,
+.desc span,
+#seller .time .years {
+  color: black;
+}
+
+#seller .time {
+  margin-top: 60px;
+}
+
+#seller .time .years {
+  margin-left: 55px !important;
+}
+
+#seller .seller-content .btpld {
+  margin-top: 30px;
+}
+
+#seller .seller-content .btpld .number {
+  background-color: var(--nav-background-color);
+  color: whitesmoke;
+  border: 1px solid var(--background-color);
+  border-radius: 15px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+#seller .seller-content .ratings {
+  display: flex;
+}
+
+#seller .seller-content .contactseller {
+  margin-top: 20px;
+}
+
+#seller .seller-content .btpld span:first-child {
+  color: #485bed;
+}
+
+.specs table tbody tr td {
+  font-size: 15px;
+  padding: 8px;
+  border: none;
+}
+
+.specs table {
+  border-collapse: collapse;
+}
+
+.specs .general {
+  margin: 5px;
+}
+
+.specs .speci {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info span b {
+  color: black;
+}
+
+.specs .speci,
+.specs tr td,
+.specs div span,
+.specs div,
+.info a,
+.info span b,
+.sellerdetails .policy a,
+#seller .seller-content .aboutseller,
+#seller .seller-content .btpld,
+#seller .seller-content .btpld span,
+#seller .seller-content .ratings,
+#seller .seller-content .ratings div,
+#seller .time,
+#seller .time span,
+.install-content .before,
+.install-content p b,
+.install-content p b del,
+.install-content span,
+.install-content h4,
+.install-content ul,
+.install-content ul li,
+.delivery div input,
+.delivery div,
+.delivery div p,
+.delivery div p b,
+.delivery span,
+.color span,
+.color div,
+.highlight,
+.inform .highlight span,
+.inform .highlight ul,
+.inform .highlight ul li,
+#supercoin div,
+#supercoin div p,
+#supercoin div span,
+#supercoin div span b,
+#supercoin h3,
+#supercoin span,
+.service span,
+.service div,
+.service .details,
+.service .details img,
+.sellerdetails .data span,
+.sellerdetails .data,
+.sellerdetails .policy,
+.sellerdetails .policy ul,
+.sellerdetails .policy ul li,
+.sellerdetails #sellerlink,
+.safe img,
+.safe span,
+.imggallery,
+.imggallery img,
+.imggallery iframe,
+.imggallery div ul,
+.imggallery .subimggallery,
+.imggallery .subimggallery .displayimg img,
+.imggallery .subimggallery .displayimg,
+.imggallery .subimggallery .allimgs,
+.imggallery .subimggallery .allimgs ul li,
+.specialprice span,
+.price .currentprice,
+.price .mrp,
+.price .perdiscount,
+.coupon span,
+.coupondetails img,
+.coupondetails span,
+.coupondetails span b,
+.allrating img,
+.allrating,
+.allrating .totalrating,
+.alldetails p,
+.alldetails,
+.offers span b,
+.offerdetails span,
+.offerdetails span b,
+.offerdetails img,
+.warrenty,
+.warrenty span,
+.warrenty img {
+  background-color: var(--background-color);
+}
+
+.specialprice,
+.price,
+.coupon,
+.coupondetails,
+.offers,
+.offerdetails,
+.warrenty,
+.delivery,
+.color,
+.inform,
+.service,
+.sellerdetails,
+.supercoin,
+.protect,
+.specs,
+.install,
+.together,
+.reviews,
+.questions,
+.safe {
+  margin-top: 15px;
+  margin-left: 25px;
+  background-color: var(--background-color);
+}

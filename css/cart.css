@@ -1,0 +1,230 @@
+:root {
+  --background-color: white;
+  --nav-background-color: #485bed;
+  --footer-background-color: #0f0f48;
+}
+
+* {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--nav-background-color);
+  margin-top: -8px;
+  position: static;
+  min-width: 1000px;
+}
+
+.navbar a {
+  background-color: transparent;
+}
+
+.cartlogo {
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .logo,
+.logo img {
+  background-color: var(--nav-background-color);
+  margin-left: 80px;
+}
+
+.searchform {
+  display: inline-block;
+  margin-top: 5px;
+  position: relative;
+  background-color: var(--nav-background-color);
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: transparent;
+  margin: 15px 0 0 70px;
+}
+
+.searchform .search input {
+  width: 600px !important;
+  height: 40px !important;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.searchform .search input,
+.searchlogo {
+  border: 0;
+  outline: 0;
+}
+
+.cart span,
+.seller span,
+.more span {
+  background-color: var(--nav-background-color);
+  color: whitesmoke;
+}
+
+.login button {
+  background-color: white;
+  color: #485bed;
+  font-size: 20px;
+  border: 0px solid white;
+  width: 100px;
+  height: 30px;
+}
+
+.login {
+  margin: 30px 0 0 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--nav-background-color);
+  position: static;
+  display: inline-block;
+}
+
+.login:hover .seller {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .more {
+  right: 300px;
+  position: fixed;
+  display: block;
+}
+
+.login:hover .cart {
+  right: 80px;
+  position: fixed;
+  display: block;
+}
+
+.login a,
+.login a:hover,
+.login a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown,
+.more-dropdown {
+  display: none;
+}
+
+.login:hover .dropdown,
+.more:hover .more-dropdown {
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+  display: block;
+}
+
+.login:hover .dropdown a,
+.more:hover .more-dropdown a {
+  margin-top: -5px;
+  margin-left: -40px;
+  color: black;
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.about .aboutlinks a {
+  color: grey;
+  text-decoration: none;
+}
+
+.vl {
+  border-left: 2px solid grey;
+  margin: 0px 10px 0px 10px;
+  height: 20px;
+}
+
+.vl2 {
+  border-top: 2px solid grey;
+  margin: 10px 10px 0px 10px;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  margin-top: 30px;
+}
+
+.aboutlinks {
+  display: flex;
+  margin-top: 13px;
+}
+
+.about .contact {
+  margin-left: 300px;
+}
+
+.about .copyright {
+  margin-left: 100px;
+}
+
+.about .contactlink {
+  color: #485bed;
+}
+
+.main .options {
+  background-color: var(--background-color);
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+.main .options a {
+  background-color: transparent;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin-left: 400px;
+  color: black;
+  border-bottom: 3px solid var(--nav-background-color);
+}
+
+.flipkart,
+.grocery {
+  background-color: var(--background-color);
+  margin: 20px 0px 20px 40px;
+}
+
+.flipkart img,
+.grocery img {
+  width: 300px;
+  margin: 10px 0px 10px 500px;
+}
+
+.flipkart p,
+.grocery p {
+  background-color: transparent;
+  margin-left: 500px;
+}
+
+.flipkart h2,
+.grocery h2 {
+  background-color: transparent;
+  margin-left: 550px;
+}
+
+.flipkart button,
+.grocery button {
+  margin-left: 600px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  color: whitesmoke;
+  border: none;
+}
+
+.flipkart button {
+  background-color: #fb641b;
+}
+

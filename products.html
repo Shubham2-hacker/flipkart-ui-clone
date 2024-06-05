@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+    <!------  Navbar Start  ------->
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <img
+          src="images/flipkart-logo.png"
+          width="90"
+          height="80"
+          alt="brand-logo" />
+      </a>
+
+      <form class="searchform">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search for Products, Brands And More "
+            id="productsSearch" />
+        </div>
+      </form>
+
+      <div class="login">
+        <button href="signup.html" title="signup">
+          <span>Login</span>
+        </button>
+
+        <ul class="dropdown">
+          <a href="profile.html">My Profile</a>
+          <a href="pluszone.html">Flipkart Plus Zone</a>
+          <a href="order.html">Orders</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="giftcards.html">Gift Cards</a>
+        </ul>
+      </div>
+
+      <div class="seller">
+        <a href="https://seller.flipkart.com/sell-online" title="seller">
+          <span>Seller</span>
+        </a>
+      </div>
+
+      <div class="more">
+        <span title="more"> More </span>
+
+        <ul class="more-dropdown">
+          <a href="https://www.flipkart.com/communication-preferences"
+            >Notification</a
+          >
+          <a href="https://www.flipkart.com/helpcentre">24x7 Customer Care</a>
+          <a href="advertise.html">Advertise</a>
+          <a href="downloadapp.html">Download App</a>
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html" title="cart">
+          <svg
+            style="background-color: #485bed"
+            class="cartlogo"
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="cziJ98"
+              d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+              fill="#fff"></path>
+          </svg>
+          <span>Cart</span>
+        </a>
+      </div>
+    </nav>
+    <!--------   Navbar End  -------->
+
+    <div id="data">
+      <section class="filter">
+        <h2>Filter</h2>
+
+        <h4>CATEGORIES</h4>
+
+        <details class="wsd">
+          <summary class="wsd-1">Wearables Smart Devices</summary>
+
+          <summary class="wsd-2">Smart Watches</summary>
+          <summary class="wsd-3">Smart Bands</summary>
+          <summary class="wsd-4">Wearables Accessories</summary>
+        </details>
+
+        <h2>Price</h2>
+
+        <input id="price-range" type="range" min="1000" max="20000" />
+
+        <div class="rangeprice">
+          <select>
+            <option selected>Min</option>
+            <option>1000</option>
+            <option>5000</option>
+            <option>10000</option>
+            <option>15000</option>
+            <option>20000</option>
+          </select>
+
+          <span>to</span>
+
+          <select>
+            <option>1000</option>
+            <option>5000</option>
+            <option>10000</option>
+            <option>15000</option>
+            <option>20000</option>
+            <option selected>20000+</option>
+          </select>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="fassured">
+          <input id="check" type="checkbox" />
+          <img id="fassuredlogo" src="images/products/f-assured.png" />
+
+          <span id="questionmark">?</span>
+        </div>
+
+        <div id="qs">
+          <header id="header">
+            <img id="logo" src="images/products/f-assured.png" />
+          </header>
+
+          <span id="speed">Seal of Quality & Speed</span>
+
+          <ul id="order">
+            <li id="list">
+              <span id="listspan1"
+                ><img id="listimg" src="images/products/check.png"
+              /></span>
+
+              <div id="content">
+                <h3 id="h31">6 Quality Checks</h3>
+                <span id="youorder">You get exactly what you ordered</span>
+              </div>
+            </li>
+
+            <li id="list2">
+              <span id="listspan2"
+                ><img id="listimg2" src="images/products/plane.png"
+              /></span>
+
+              <div id="content2">
+                <h3 id="h32">Fast & Free Shipping</h3>
+                <span id="deliverytime"
+                  >Delivery within 2-4 days Get free shipping on select
+                  products.</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="headphone">
+          <details>
+            <summary>HEADPHONE TYPES</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="intheear">In the Ear</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="outtheear">Out the Ear</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="wireless">True Wireless</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="connectivity">
+          <details>
+            <summary>CONNECTIVITY</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="bluetooth">Bluetooth</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="bluetoothwired">Bluetooth & Wired</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="Wired">Wired</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="ratings">
+          <details>
+            <summary>CUSTOMER RATINGS</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="4">4 &#9733; & above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="3">3 &#9733; & above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="2">2 &#9733; & above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="1">1 &#9733; & above</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="brand">
+          <details>
+            <summary>BRANDS</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="boat">Boat</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="mivi">Mivi</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="oneplus">Oneplus</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="realme">Realme</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="oppo">Oppo</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="noise">Noise</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="discount">
+          <details>
+            <summary>DISCOUNT</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="50">50% or above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="40">40% or above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="30">30% or above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="20">20% or above</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="10">10% or above</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="feature">
+          <details>
+            <summary>FEATURE</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="deepbass">Deep Bass</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="fastcharging">Fast Charging</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="flatwire">Flat Wire</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="sweatproof">Sweat Proof</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="headphonedesign">
+          <details>
+            <summary>HEADPHONE DESIGN</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="behindneck">Behind the Neck</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="canalphone">Canalphone</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="earclip">Ear Clip</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="earwings">Ear Wings</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="color">
+          <details>
+            <summary>COLOR</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="black">Black</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="blue">Blue</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="brown">Brown</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="gold">Gold</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="offers">
+          <details>
+            <summary>OFFERS</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="nocostemi">NO Cost EMI</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="specialprice">Special Price</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="availibility">
+          <details>
+            <summary>AVAILIBILITY</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="outofstock">Include Out Of Stock</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="gst">
+          <details>
+            <summary>GST INVOICE AVAILABLE</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="gstinvoice">GST Invoice Available</label>
+            </summary>
+          </details>
+        </div>
+
+        <br />
+        <hr />
+
+        <div class="compatible">
+          <details>
+            <summary>COMPATIBLE WITH</summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="audio">Audio Player</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="desktop">Desktop</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="gaming">Gaming Console</label>
+            </summary>
+
+            <summary>
+              <input type="checkbox" />
+              <label name="laptop">Laptop</label>
+            </summary>
+          </details>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="urls">
+          <a href="index.html">Home </a>
+          <span> > </span>
+          <a href="product.html">Audio & Video</a>
+        </div>
+
+        <div>
+          <span class="samsungbuds"
+            >Check out the Exclusive Launches of
+            <a
+              href="https://www.flipkart.com/samsung-galaxy-buds-pro-active-noise-cancellation-enabled-bluetooth-headset/p/itm2fdad8a1d078b"
+              >Samsung Galaxy Buds Pro</a
+            >
+            active noise cancellation enable bluetooth headset with different
+            colors will be available from 28th Jan 2021.
+          </span>
+        </div>
+
+        <div class="all">
+          <span>
+            Also Check:
+            <a
+              href="https://www.flipkart.com/audio-video/headphones/skullcandy~brand/pr?sid=0pm%2Cfcn"
+              >Skullcandy Wireless,</a
+            >
+            <a
+              href="https://www.flipkart.com/audio-video/headphones/jbl~brand/pr?sid=0pm%2Cfcn"
+              >JBL Headset,</a
+            >
+            <a
+              href="https://www.flipkart.com/audio-video/headphones/jabra~brand/pr?sid=0pm%2Cfcn"
+              >Jabra Headphones,</a
+            >
+            <a href="https://www.flipkart.com/q/samsung-level-u"
+              >Samsung Level U,</a
+            >
+            <a
+              href="https://www.flipkart.com/audio-video/headphones/sony~brand/pr?sid=0pm%2Cfcn"
+              >Sony Extra Base Headphones</a
+            >
+          </span>
+        </div>
+
+        <div class="quantity">
+          <h3>
+            Headset <span>(Showing 1 - 10 products of 2,222 products)</span>
+          </h3>
+        </div>
+
+        <div>
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/cmf.webp" />
+              <h5>
+                CMF by Nothing Buds 42 dB Active Noise Cancellation, Ul...
+              </h5>
+              <p>Dark Grey, True Wireless</p>
+
+              <div>
+                <span class="ratings">4.2 &#9733;</span>
+                <span class="total">(5,783)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹2,499</h3>
+                <span>₹2,999</span>
+
+                <span class="peroff">16% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/noise-watch.webp" />
+              <h5>Noise Colorfit Icon...</h5>
+              <p>Black Strap, Regular</p>
+
+              <div>
+                <span class="ratings">4.2 &#9733;</span>
+                <span class="total">(5,783)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹1,399</h3>
+                <span>₹5,999</span>
+
+                <span class="peroff">76% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/sony-speaker.webp" />
+              <h5>
+                SONY SRS-XB100 Portable Super-Compact,Waterproof, 16Hrs...
+              </h5>
+              <p>Black, Stereo Channel</p>
+
+              <div>
+                <span class="ratings">3.7 &#9733;</span>
+                <span class="total">(600)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹4,490</h3>
+                <span>₹5,990</span>
+
+                <span class="peroff">25% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img src="images/best-electronics/gamingmoni.webp" />
+              <h5>
+                DELL S Series 24 inch Full HD IPS Panel with 3-Years warranty,
+                99% sRGB...
+              </h5>
+              <p>75 Hz Refresh Rate</p>
+
+              <div>
+                <span class="ratings">4.5 &#9733;</span>
+                <span class="total">(3,613)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹9,799</h3>
+                <span>₹21,399</span>
+
+                <span class="peroff">76% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/sony-camera.webp" />
+              <h5>SONY Alpha ILCE-6100L APS-C Mirrorless Camera...</h5>
+              <p>24.2 MP Camera</p>
+
+              <div>
+                <span class="ratings">4.5 &#9733;</span>
+                <span class="total">(800)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹61,489</h3>
+                <span>₹75,990</span>
+
+                <span class="peroff">19% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/gaming-monitor.webp" />
+              <h5>
+                SAMSUNG M5 27 inch Full HD VA Panel with embedded TV Apps...
+              </h5>
+              <p>250 nits Brightness</p>
+
+              <div>
+                <span class="ratings">4.3 &#9733;</span>
+                <span class="total">(1200)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹15,499</h3>
+                <span>₹30,200</span>
+
+                <span class="peroff">48% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img
+                id="itemimg"
+                style="width: 150px"
+                src="images/products/keyboard.webp" />
+              <h5>Aula F2023 / Anti-ghosting, Aluminium body with Mobile...</h5>
+              <p>Multimedia Keys</p>
+
+              <div>
+                <span class="ratings">4.2 &#9733;</span>
+                <span class="total">(3500)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹699</h3>
+                <span>₹2,999</span>
+
+                <span class="peroff">76% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+
+          <div class="items">
+            <a href="description.html">
+              <img id="itemimg" src="images/products/antivirus.webp" />
+              <h5>Kaspersky Anti-virus 3.0 User 3 Years</h5>
+              <p>3 Years Subscription</p>
+
+              <div>
+                <span class="ratings">4.5 &#9733;</span>
+                <span class="total">(100)</span>
+
+                <img id="fassured" src="images/products/f-assured.png" />
+              </div>
+
+              <div class="price">
+                <h3>₹983</h3>
+                <span>₹2,399</span>
+
+                <span class="peroff">59% off</span>
+              </div>
+
+              <p class="bankoffer">Bank Offer</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!------   Footer Start   ------->
+    <footer class="footer">
+      <div class="about">
+        <p>ABOUT</p>
+
+        <ul>
+          <a
+            href="https://www.flipkart.com/helpcentre?otracker=undefined_footer_navlinks"
+            >Contact US</a
+          >
+          <a
+            href="https://www.flipkart.com/helpcentre?otracker=undefined_footer_navlinks"
+            >About US</a
+          >
+        </ul>
+      </div>
+
+      <div class="companies">
+        <p>GROUP COMPANIES</p>
+
+        <ul>
+          <a href="https://www.myntra.com/">Myntra</a>
+          <a href="https://www.flipkartwholesale.com/">Flipkart Wholesale</a>
+          <a href="https://www.cleartrip.com/">Cleartrip</a>
+          <a href="https://www.shopsy.in/">Shopsy</a>
+        </ul>
+      </div>
+
+      <div class="help">
+        <p>HELP</p>
+
+        <ul>
+          <a href="https://www.flipkart.com/pages/payments">Payments</a>
+          <a href="https://www.flipkart.com/pages/shipping">Shipping</a>
+          <a
+            href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG"
+            >Cancellation Policy & Returns</a
+          >
+          <a
+            href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG"
+            >FAQ</a
+          >
+        </ul>
+      </div>
+
+      <div class="policy">
+        <p>CONSUMER POLICY</p>
+
+        <ul>
+          <a
+            href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG"
+            >Cancellation & Returns</a
+          >
+          <a
+            href="https://www.flipkart.com/pages/terms?otracker=undefined_footer_navlinks"
+            >Terms Of Use</a
+          >
+          <a
+            href="https://www.flipkart.com/pages/paymentsecurity?otracker=undefined_footer_navlinks"
+            >Security</a
+          >
+          <a
+            href="https://www.flipkart.com/pages/privacypolicy?otracker=undefined_footer_navlinks"
+            >Privacy</a
+          >
+          <a
+            href="https://www.flipkart.com/sitemap?otracker=undefined_footer_navlinks"
+            >Sitemap</a
+          >
+        </ul>
+      </div>
+
+      <div class="vl"></div>
+
+      <div class="mail">
+        <p class="mailus">MAIL US</p>
+
+        <span> Shubham Chotaliya</span>
+        <span> Rajkot, Rajkot,</span>
+        <span> Gujarat - 360002,</span>
+        <span> India </span>
+
+        <p class="social">Social</p>
+      </div>
+
+      <div class="address">
+        <p class="officeadd">OFFICE ADDRESS</p>
+
+        <span> Shubham Chotaliya</span>
+        <span> Rajkot, Rajkot,</span>
+        <span> Gujarat - 360002,</span>
+        <span> India </span>
+        <span> Mobile No: 8980620781 </span>
+
+        <img
+          src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"
+          alt="Payment Method" />
+      </div>
+    </footer>
+
+    <script>
+      let questionmark = document.getElementById("questionmark");
+      let check = document.getElementById("check");
+
+      let fassuredlogo = document.getElementById("fassuredlogo");
+      let qs = document.getElementById("qs");
+      let header = document.getElementById("header");
+      let speed = document.getElementById("speed");
+      let logo = document.getElementById("logo");
+      let order = document.getElementById("order");
+      let list = document.getElementById("list");
+      let listimg = document.getElementById("listimg");
+      let content = document.getElementById("content");
+
+      let list2 = document.getElementById("list2");
+      let listimg2 = document.getElementById("listimg2");
+      let content2 = document.getElementById("content2");
+      let deliverytime = document.getElementById("deliverytime");
+      let youorder = document.getElementById("youorder");
+      let listspan1 = document.getElementById("listspan1");
+      let listspan2 = document.getElementById("listspan2");
+
+      let h31 = document.getElementById("h31");
+      let h32 = document.getElementById("h32");
+
+      questionmark.addEventListener("click", () => {
+        qs.style.display = "block";
+        qs.style.marginTop = "20px";
+
+        qs.style.width = "285px";
+        qs.style.zIndex = "1";
+
+        check.style.marginTop = "-380px";
+
+        fassuredlogo.style.height = "40px";
+        fassuredlogo.style.marginLeft = "10px";
+
+        qs.style.backgroundColor = "white";
+        order.style.backgroundColor = "white";
+        content.style.backgroundColor = "white";
+        content2.style.backgroundColor = "white";
+        h31.style.backgroundColor = "white";
+        h32.style.backgroundColor = "white";
+        deliverytime.style.backgroundColor = "white";
+        youorder.style.backgroundColor = "white";
+        listimg.style.backgroundColor = "white";
+        listimg2.style.backgroundColor = "white";
+        listspan1.style.backgroundColor = "white";
+        listspan2.style.backgroundColor = "white";
+        speed.style.backgroundColor = "white";
+
+        header.style.width = "280px";
+        header.style.height = "80px";
+        header.style.paddingTop = "50px";
+        header.style.textAlign = "center";
+        header.style.backgroundColor = "#485bed";
+        logo.style.backgroundColor = "#485bed";
+        logo.style.width = "205px";
+
+        speed.style.display = "block";
+        speed.style.marginTop = "30px";
+        speed.style.marginLeft = "60px";
+
+        order.style.listStyleType = "none";
+
+        list.style.display = "flex";
+        list.style.marginLeft = "-20px";
+        listimg.style.width = "60px";
+        listimg.style.marginTop = "20px";
+        content.style.display = "block";
+        content.style.marginLeft = "10px";
+
+        list2.style.display = "flex";
+        list2.style.marginLeft = "-20px";
+        listimg2.style.width = "60px";
+        listimg2.style.marginTop = "20px";
+        content2.style.display = "block";
+        content2.style.marginLeft = "10px";
+      });
+    </script>
+  </body>
+</html>
